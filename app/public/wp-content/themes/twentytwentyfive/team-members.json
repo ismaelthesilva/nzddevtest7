@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Jack O'Connor",
+    "phone_number": "027 777 7777",
+    "featured_image": "assets/images/jack.png",
+    "title": "BRP (Hons) MNZPI",
+    "position": "Principal Planner | Director"
+  },
+  {
+    "name": "Leo Patel",
+    "phone_number": "027 666 6666",
+    "featured_image": "assets/images/leo.png",
+    "title": "BRP MNZPI",
+    "position": "Principal Planner | Director"
+  },
+  {
+    "name": "Aria Thompson",
+    "phone_number": "027 888 8888",
+    "featured_image": "assets/images/aria.png",
+    "title": "PhD, MEnv BSc (GEO)",
+    "position": "Consultant Planner"
+  },
+  {
+    "name": "Patty Gower",
+    "phone_number": "021 234 5456",
+    "featured_image": "assets/images/patty.png",
+    "title": "BRP (HONS) MNZPI",
+    "position": "Associate Planner"
+  },
+  {
+    "name": "Jacinda Ardern",
+    "phone_number": "027 889 9892",
+    "featured_image": "assets/images/jacinda.png",
+    "title": "MNZPI",
+    "position": "Associate Planner | Technical Lead"
+  },
+  {
+    "name": "Chris Luxon",
+    "phone_number": "021 123 1234",
+    "featured_image": "assets/images/chris.png",
+    "title": "BRP (MSc)",
+    "position": "Associate Planner"
+  }
+]
