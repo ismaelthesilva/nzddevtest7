@@ -18,7 +18,14 @@ Template Post Type: page
     <h1 class="hero-title">Committed to community growth through expert planning</h1>
     <img class="hero-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/header.png" alt="Header landscape">
   </div>
- 
+
+  <main class="wpb-content-area">
+    <?php the_content(); ?>
+  </main>
+
+  <main class="wpb-content-area">
+    <?php the_content(); ?>
+  </main>
   <section class="team-section">
     <h2>Our People</h2>
     <div class="team-filter">

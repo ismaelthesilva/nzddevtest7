@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 [30-Oct-2025 22:52:06] NOTICE: fpm is running, pid 65691
 [30-Oct-2025 22:52:06] NOTICE: ready to handle connections
+=======
+[30-Oct-2025 14:28:17] NOTICE: fpm is running, pid 40506
+[30-Oct-2025 14:28:17] NOTICE: ready to handle connections
+>>>>>>> 4c0703dee2f2e3006753a0ebcf8d581e848df18b

@@ -1,0 +1,26 @@
+[30-Oct-2025 04:54:42 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting end of file in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-content/themes/twentytwentyfive/functions.php on line 40
+[30-Oct-2025 04:54:42 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/class-wp-recovery-mode-email-service.php on line 367
+[30-Oct-2025 04:54:42 UTC] PHP Warning:  Trying to access array offset on value of type bool in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/class-wp-recovery-mode-email-service.php on line 368
+[30-Oct-2025 04:54:46 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting end of file in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-content/themes/twentytwentyfive/functions.php on line 40
+[30-Oct-2025 04:54:49 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting end of file in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-content/themes/twentytwentyfive/functions.php on line 40
+[30-Oct-2025 04:54:57 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting end of file in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-content/themes/twentytwentyfive/functions.php on line 40
+[30-Oct-2025 04:55:00 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting end of file in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-content/themes/twentytwentyfive/functions.php on line 40
+[30-Oct-2025 05:00:50 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/post-template.php:324
+Stack trace:
+#0 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/post-template.php(247): get_the_content('<span aria-labe...', false)
+#1 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-content/themes/twentytwentyfive/page-blank-content.php(30): the_content()
+#2 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/template-loader.php(106): include('/Users/ismaelsi...')
+#3 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-blog-header.php(19): require_once('/Users/ismaelsi...')
+#4 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/index.php(17): require('/Users/ismaelsi...')
+#5 {main}
+  thrown in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/post-template.php on line 324
+[30-Oct-2025 05:01:22 UTC] PHP Fatal error:  Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/post-template.php:324
+Stack trace:
+#0 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/post-template.php(247): get_the_content('<span aria-labe...', false)
+#1 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-content/themes/twentytwentyfive/page-blank-content.php(30): the_content()
+#2 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/template-loader.php(106): include('/Users/ismaelsi...')
+#3 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-blog-header.php(19): require_once('/Users/ismaelsi...')
+#4 /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/index.php(17): require('/Users/ismaelsi...')
+#5 {main}
+  thrown in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/post-template.php on line 324
+[30-Oct-2025 08:40:01 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
