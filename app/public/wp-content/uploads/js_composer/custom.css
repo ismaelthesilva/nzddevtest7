@@ -1,0 +1,465 @@
+/*
+Theme Name: Twenty Twenty-Five
+Theme URI: https://wordpress.org/themes/twentytwentyfive/
+Author: the WordPress team
+Author URI: https://wordpress.org
+Description: Twenty Twenty-Five emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.
+Requires at least: 6.7
+Tested up to: 6.8
+Requires PHP: 7.2
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyfive
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+	text-decoration-thickness: 1px !important;
+	text-underline-offset: .1em;
+}
+
+/* Focus styles */
+:where(.wp-site-blocks *:focus) {
+	outline-width: 2px;
+	outline-style: solid;
+}
+
+/* Increase the bottom margin on submenus, so that the outline is visible. */
+.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child) {
+	margin-bottom: 3px;
+}
+
+/* Increase the outline offset on the parent menu items, so that the outline does not touch the text. */
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
+	outline-offset: 4px;
+}
+
+/* Hero and Team Section Styles (from page-blank-content.php) */
+.hero-section {
+  text-align: left;
+  padding: 3rem 0 0 0;
+}
+.hero-section h1 {
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: #2d3e46;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+.hero-section .subtitle {
+  color: #f47c20;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.hero-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  margin: 2rem 0 3rem 0;
+  border-radius: 0.5rem;
+  display: block;
+}
+.team-section {
+  padding: 2rem 0 4rem 0;
+}
+.team-section h2 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 0.008em;
+  color: #213E50;
+  margin-bottom: 2rem;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.team-member {
+  background: #fff;
+  border: 1px solid #F0F0F0;
+  border-radius: 12px;
+  min-width: 280px;
+  max-width: 453px;
+  min-height: 0;
+  box-shadow: 0 2px 8px rgba(33,62,80,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.team-photo img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.team-info {
+  padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  width: 100%;
+}
+.team-info h3 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.008em;
+  color: #213E50;
+  margin: 0 0 0.2rem 0;
+}
+.team-info .team-qual {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #213E50;
+  margin-bottom: 0.5rem;
+}
+.team-position {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.008em;
+  color: #F9855D;
+  margin-bottom: 0.5rem;
+}
+.team-phone {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-decoration: underline;
+  color: #213E50;
+  margin-bottom: 0.2rem;
+}
+.team-read-bio {
+  position: static;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.008em;
+  color: #F9855D;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: auto;
+  margin-left: 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.team-read-bio .bio-arrow {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 0.2rem;
+  vertical-align: middle;
+}
+@media (max-width: 700px) {
+  .hero-section h1 { font-size: 1.5rem; }
+  .team-section h2 { font-size: 2rem; }
+  .team-grid { grid-template-columns: 1fr; }
+  .team-photo img { height: 160px; }
+  .team-info h3 { font-size: 1.2rem; }
+  .team-position {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+/* Remove outline offset from the submenus, otherwise the outline is visible outside the submenu container. */
+.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	outline-offset: 0;
+}
+
+/*
+ * Progressive enhancement to reduce widows and orphans
+ * https://github.com/WordPress/gutenberg/issues/55190
+ */
+h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
+	text-wrap: pretty;
+}
+
+/*
+ * Change the position of the more block on the front, by making it a block level element.
+ * https://github.com/WordPress/gutenberg/issues/65934
+*/
+.more-link {
+	display: block;
+}
+
+/* NZD Dev Test Figma Styles */
+:root {
+  --nzd-blue: #213E50;
+  --nzd-orange: #F9855D;
+  --nzd-bg: #FFFFFF;
+  --nzd-border: #F0F0F0;
+}
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--nzd-bg);
+  color: var(--nzd-blue);
+}
+.header {
+  padding: 3rem 0 1.5rem 0;
+  background: var(--nzd-bg);
+}
+.header .about-link {
+  color: var(--nzd-orange);
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 0.008em;
+}
+.header h1 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 84px;
+  letter-spacing: 0.008em;
+  color: #213E50;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+.hero-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  margin: 2rem 0 3rem 0;
+  border-radius: 0.5rem;
+  display: block;
+}
+.team-section {
+  padding: 2rem 0 4rem 0;
+}
+.team-section h2 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 0.008em;
+  color: #213E50;
+  margin-bottom: 2rem;
+}
+/* Responsive team grid with no blank spaces */
+/* Responsive team grid: 3-2-1 columns */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.team-member {
+  background: var(--nzd-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(33,62,80,0.04);
+  border: 1px solid var(--nzd-border);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 0;
+  min-height: 400px;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+  }
+  .team-member {
+    min-height: 320px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .team-member {
+    min-height: 220px;
+    padding: 0.2rem;
+  }
+}
+.team-member {
+  background: var(--nzd-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(33,62,80,0.04);
+  border: 1px solid var(--nzd-border);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  min-height: 540px;
+  position: relative;
+}
+.team-photo img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.team-info {
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+}
+.team-info h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem 0;
+  color: var(--nzd-blue);
+  letter-spacing: 0.008em;
+}
+.team-info .team-qual {
+  font-size: 1.1rem;
+  color: var(--nzd-blue);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.team-position {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.008em;
+  color: #F9855D;
+  margin-bottom: 0.5rem;
+}
+.team-phone {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-decoration: underline;
+  color: #213E50;
+  margin-bottom: 0.7rem;
+}
+.team-read-bio {
+  margin-top: 0.1rem;
+  right: auto;
+  bottom: auto;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.008em;
+  color: #F9855D;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* align left */
+  align-self: flex-start;
+  width: auto;
+  margin-left: 0;
+}
+.team-read-bio .bio-arrow {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 0.2rem;
+  vertical-align: middle;
+}
+@media (max-width: 900px) {
+  .header h1 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+  .team-section h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .team-grid { grid-template-columns: 1fr; }
+  .team-photo img { height: 180px; }
+  .team-info h3 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  .team-position {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .team-phone {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .team-read-bio {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+/* Simple filter styles */
+.team-filter {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.team-filter button {
+  background: #fff;
+  border: 1px solid #f47c20;
+  color: #f47c20;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.team-filter button.active,
+.team-filter button:hover {
+  background: #f47c20;
+  color: #fff;
+}
