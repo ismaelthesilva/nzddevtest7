@@ -1,0 +1,192 @@
+/* Override WPBakery container widths */
+.vc_row .team-section,
+.wpb_column .team-section,
+.vc_column_container .team-section {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Ensure the parent container is full width */
+.wpb_wrapper,
+.vc_column-inner,
+.wpb_content_element {
+  width: 100% !important;
+}
+
+/* Team Section */
+.team-section {
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding: 2rem 1rem !important;
+}
+
+.team-section h2 {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 50px !important;
+  line-height: 55px !important;
+  letter-spacing: 0.008em !important;
+  color: #213E50 !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Team Grid - 3 columns FORCED */
+.team-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* Team Member Cards - prevent breaking to single column */
+.team-member {
+  background: #fff !important;
+  border: 1px solid #F0F0F0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(33,62,80,0.04) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  position: relative !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* Team Photo */
+.team-photo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.team-photo img {
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* Team Info */
+.team-info {
+  padding: 1.5rem !important;
+  width: 100% !important;
+}
+
+.team-info h3 {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  margin: 0 0 0.5rem 0 !important;
+  color: #213E50 !important;
+  letter-spacing: 0.008em !important;
+}
+
+.team-info .team-qual {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 1.1rem !important;
+  color: #213E50 !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 400 !important;
+}
+
+.team-position {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  letter-spacing: 0.008em !important;
+  color: #F9855D !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.team-phone {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 25px !important;
+  text-decoration: underline !important;
+  color: #213E50 !important;
+  margin-bottom: 0.7rem !important;
+}
+
+.team-read-bio {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.008em !important;
+  color: #F9855D !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  margin-top: 0.5rem !important;
+}
+
+.team-read-bio .bio-arrow {
+  display: inline-block !important;
+  width: 22px !important;
+  height: 22px !important;
+  margin-left: 0.2rem !important;
+  vertical-align: middle !important;
+}
+
+/* Team Filter Buttons */
+.team-filter {
+  margin-bottom: 2rem !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+}
+
+.team-filter button {
+  background: #fff !important;
+  border: 1px solid #f47c20 !important;
+  color: #f47c20 !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 20px !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: background 0.2s, color 0.2s !important;
+}
+
+.team-filter button.active,
+.team-filter button:hover {
+  background: #f47c20 !important;
+  color: #fff !important;
+}
+
+/* Responsive - Tablet (2 columns) */
+@media (min-width: 701px) and (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem !important;
+  }
+}
+
+/* Responsive - Mobile (1 column) */
+@media (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  .team-photo img {
+    height: 200px !important;
+  }
+  
+  .team-info h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .team-info {
+    padding: 1rem !important;
+  }
+}

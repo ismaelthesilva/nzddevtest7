@@ -24,3 +24,27 @@ Stack trace:
 #5 {main}
   thrown in /Users/ismaelsilva/Local Sites/nzddevtest7/app/public/wp-includes/post-template.php on line 324
 [30-Oct-2025 08:40:01 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[02-Nov-2025 11:34:19 UTC] Team Member: Jack O'Connor | Category: director
+[02-Nov-2025 11:34:19 UTC] Team Member: Leo Patel | Category: director
+[02-Nov-2025 11:34:19 UTC] Team Member: Aria Thompson | Category: consultant
+[02-Nov-2025 11:34:19 UTC] Team Member: Patty Gower | Category: associate
+[02-Nov-2025 11:34:19 UTC] Team Member: Jacinda Ardern | Category: associate lead
+[02-Nov-2025 11:34:19 UTC] Team Member: Chris Luxon | Category: associate
+[02-Nov-2025 11:34:26 UTC] Team Member: Jack O'Connor | Category: director
+[02-Nov-2025 11:34:26 UTC] Team Member: Leo Patel | Category: director
+[02-Nov-2025 11:34:26 UTC] Team Member: Aria Thompson | Category: consultant
+[02-Nov-2025 11:34:26 UTC] Team Member: Patty Gower | Category: associate
+[02-Nov-2025 11:34:26 UTC] Team Member: Jacinda Ardern | Category: associate lead
+[02-Nov-2025 11:34:26 UTC] Team Member: Chris Luxon | Category: associate
+[02-Nov-2025 11:34:28 UTC] Team Member: Jack O'Connor | Category: director
+[02-Nov-2025 11:34:28 UTC] Team Member: Leo Patel | Category: director
+[02-Nov-2025 11:34:28 UTC] Team Member: Aria Thompson | Category: consultant
+[02-Nov-2025 11:34:28 UTC] Team Member: Patty Gower | Category: associate
+[02-Nov-2025 11:34:28 UTC] Team Member: Jacinda Ardern | Category: associate lead
+[02-Nov-2025 11:34:28 UTC] Team Member: Chris Luxon | Category: associate
+[02-Nov-2025 11:34:29 UTC] Team Member: Jack O'Connor | Category: director
+[02-Nov-2025 11:34:29 UTC] Team Member: Leo Patel | Category: director
+[02-Nov-2025 11:34:29 UTC] Team Member: Aria Thompson | Category: consultant
+[02-Nov-2025 11:34:29 UTC] Team Member: Patty Gower | Category: associate
+[02-Nov-2025 11:34:29 UTC] Team Member: Jacinda Ardern | Category: associate lead
+[02-Nov-2025 11:34:29 UTC] Team Member: Chris Luxon | Category: associate

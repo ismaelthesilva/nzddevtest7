@@ -79,29 +79,29 @@ a {
   margin-bottom: 2rem;
 }
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.2rem;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.2rem !important;
   justify-content: center;
   max-width: 1400px;
   margin: 0 auto;
 }
+
 .team-member {
   background: #fff;
   border: 1px solid #F0F0F0;
   border-radius: 12px;
-  min-width: 280px;
-  max-width: 453px;
-  min-height: 0;
   box-shadow: 0 2px 8px rgba(33,62,80,0.04);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 0 auto;
   position: relative;
-  padding-bottom: 2.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
 }
+
 .team-photo img {
   width: 100%;
   height: 220px;
@@ -189,6 +189,10 @@ a {
   }
 }
 
+@media (min-width: 701px) and (max-width: 1024px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* Remove outline offset from the submenus, otherwise the outline is visible outside the submenu container. */
 .wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
 	outline-offset: 0;
@@ -267,29 +271,6 @@ body {
   color: #213E50;
   margin-bottom: 2rem;
 }
-/* Responsive team grid with no blank spaces */
-/* Responsive team grid: 3-2-1 columns */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media (max-width: 1100px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-}
 
 .team-member {
   background: var(--nzd-bg);
@@ -309,40 +290,6 @@ body {
   margin: 0;
 }
 
-@media (max-width: 900px) {
-  .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
-  }
-  .team-member {
-    min-height: 320px;
-    padding: 0.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .team-member {
-    min-height: 220px;
-    padding: 0.2rem;
-  }
-}
-.team-member {
-  background: var(--nzd-bg);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(33,62,80,0.04);
-  border: 1px solid var(--nzd-border);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  min-height: 540px;
-  position: relative;
-}
 .team-photo img {
   width: 100%;
   height: 260px;
@@ -421,7 +368,9 @@ body {
     font-size: 2rem;
     line-height: 1.2;
   }
-  .team-grid { grid-template-columns: 1fr; }
+  .team-grid { 
+    grid-template-columns: 1fr;
+  }
   .team-photo img { height: 180px; }
   .team-info h3 {
     font-size: 1.2rem;
